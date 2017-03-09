@@ -4,7 +4,7 @@
      
     $min_length = 3;
     // you can set minimum length of the query if you want
-     
+     echo 'dd';
     if(strlen($query) >= $min_length){ // if query length is more or equal minimum length then
          
         $query = htmlspecialchars($query); 
