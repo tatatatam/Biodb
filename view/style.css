@@ -1,0 +1,112 @@
+#container
+{
+	width: 800;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header
+{
+	color: #1a237e;
+	text-align: center;
+}
+
+#incontent
+{
+	padding: 10;
+}
+
+#login
+{
+	width: 500;
+	height: 100;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #76ff03;
+	cursor: pointer;
+	border-radius: 75;
+	overflow: hidden;
+}
+#login:before
+{
+	content: 'LOG IN';
+	font-family: 'arial';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 60;
+	transition: all 0.5s;
+}
+#login:hover:before
+{
+	top: -30%;
+}
+#login:after
+{
+	font-family: 'Ionicons';
+	content: '\f374';
+	position: absolute;
+	top: 130%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 60;
+	transition: all 0.5s;
+}
+#login:hover:after
+{
+	top: 50%;
+}
+
+#signup
+{
+	width: 500;
+	height: 100;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #76ff03;
+	cursor: pointer;
+	border-radius: 75;
+	overflow: hidden;
+}
+#signup:before
+{
+	content: 'SIGN UP';
+	font-family: 'arial';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 60;
+	transition: all 0.5s;
+}
+#signup:hover:before
+{
+	top: -30%;
+}
+#signup:after
+{
+	font-family: 'Ionicons';
+	content: '\f127';
+	position: absolute;
+	top: 130%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 60;
+	transition: all 0.5s;
+}
+#signup:hover:after
+{
+	top: 50%;
+}
+
+#footer
+{
+	clear: both;
+	padding: 10;
+	text-align: right;
+}
