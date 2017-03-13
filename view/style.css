@@ -7,8 +7,7 @@
 
 #header
 {
-	color: #1a237e;
-	text-align: center;
+	
 }
 
 #incontent
@@ -32,6 +31,7 @@
 #login:before
 {
 	content: 'LOGIN';
+	color: #fff;
 	font-family: 'arial';
 	position: absolute;
 	top: 50%;
@@ -48,6 +48,7 @@
 {
 	font-family: 'Ionicons';
 	content: '\f374';
+	color: #fff;
 	position: absolute;
 	top: 130%;
 	left: 50%;
@@ -76,6 +77,7 @@
 #signup:before
 {
 	content: 'SIGN UP';
+	color: #fff;
 	font-family: 'arial';
 	position: absolute;
 	top: 50%;
@@ -92,6 +94,7 @@
 {
 	font-family: 'Ionicons';
 	content: '\f127';
+	color: #fff;
 	position: absolute;
 	top: 130%;
 	left: 50%;
@@ -172,6 +175,64 @@ input[class="signup_input"]
 {
 	width: 300;
 	height: 50;
+	margin-bottom: 20;
+	padding-left: 20;
+	border-radius: 10;
+	color: #fff;
+	font-family: 'arial';
+	background-color: #00c853;
+	border-bottom: 4 solid #1b5e20;
+}
+
+#allsearchform
+{
+	width: 1000;
+	height: 700;
+	text-align: center;
+	background-color: rgba(185, 246, 202,0.5);
+	border-radius: 100;
+	margin: 0 auto;
+	margin-top: 100;
+	margin-bottom: 100;
+}
+#allsearchform img
+{
+	width: 200;
+	height: 200;
+	margin-top: -60;
+	margin-bottom: 30;
+}
+input[class="searchinput_01"]
+{
+	width: 700;
+	height: 50;
+	margin-bottom: 50;
+	padding-left: 20;
+	border-radius: 10;
+}
+input[class="searchinput_02"]
+{
+	width: 250;
+	height: 50;
+	margin-bottom: 20;
+	margin-left: 15;
+	padding-left: 20;
+	border-radius: 10;
+}
+input[class="searchinput_03"]
+{
+	width: 400;
+	height: 50;
+	margin-top: 50;
+	margin-bottom: 20;
+	padding-left: 20;
+	border-radius: 10;
+}
+.search_button
+{
+	width: 300;
+	height: 50;
+	margin-top: 35;
 	margin-bottom: 20;
 	padding-left: 20;
 	border-radius: 10;
