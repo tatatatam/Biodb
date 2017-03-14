@@ -7,17 +7,18 @@ if (!mysql_select_db('tamtest')) {
     die('Could not select database: ' . mysql_error());
 }
 
-$idtitle = null;
-$title = $_POST["titile"];
-$article = $_POST["article"];
-$author = $_POST["author"];
+$username = $_POST["username"];
+$password = $_POST["password"];
 
-
-$result = mysql_query("INSERT INTO textbook (idtitle,title,article,author) VALUES('$idtitle','$title','$article','$author')");
+$result = mysql_query("SELECT idcard FROM userdat WHERE username='$username'  AND password ='$password'");
 if (!$result) {
     die('Could not query:' . mysql_error());
-}else{
-	header('Location: /testfile/php/addCollect.php');
+}
+if($row = mysql_fetch_array($result)){
+	header('Location: /testfile/php/Searching.php');
+}
+else{
+	header('Location: /testfile/php/index.php');
 }
 
 

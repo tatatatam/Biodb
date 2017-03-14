@@ -3,7 +3,7 @@
 <head></head>
 <body>   
 <div class="content">
-    <form action="processsignup.php" method="POST">
+    <form action="signuptest.php" method="POST">
         <label>Username: </label>
         <input name="username" type="text" size="25" />
 		<label>Password: </label>

@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "myDB";
+$dbname = "tamtest";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -15,13 +15,23 @@ if ($conn->connect_error) {
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-$sql = "SELECT id, firstname FROM biodb WHERE username = $username AND password = $password";
+$sql = "SELECT * FROM `userdat` WHERE `username` = '$username' AND `password` = '$password'";
 $result = $conn->query($sql);
+if($result === FALSE) { 
+    die(mysql_error()); // TODO: better error handling
+}
 
-if ($result!= null) {
- echo $result;
+while($row = mysql_fetch_array($result,MYSQL_NUM))
+{
+    echo $row['idcard'];
+}
+
+if ($result) {
+echo 555;
+//header('Location: /testfile/php/Searching.php');
+
 } else {
-    echo "0 results";
+    echo "error";
 }
 $conn->close();
 
