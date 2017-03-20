@@ -17,8 +17,8 @@
 
 #login
 {
-	width: 500;
-	height: 100;
+	width: 400;
+	height: 75;
 	position: absolute;
 	top: 40%;
 	left: 50%;
@@ -37,12 +37,12 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	font-size: 60;
+	font-size: 45;
 	transition: all 0.5s;
 }
 #login:hover:before
 {
-	top: -30%;
+	top: -50%;
 }
 #login:after
 {
@@ -53,7 +53,7 @@
 	top: 130%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	font-size: 60;
+	font-size: 45;
 	transition: all 0.5s;
 }
 #login:hover:after
@@ -63,10 +63,10 @@
 
 #signup
 {
-	width: 500;
-	height: 100;
+	width: 400;
+	height: 75;
 	position: absolute;
-	top: 70%;
+	top: 65%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	background: #76ff03;
@@ -83,12 +83,12 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	font-size: 60;
+	font-size: 45;
 	transition: all 0.5s;
 }
 #signup:hover:before
 {
-	top: -30%;
+	top: -50%;
 }
 #signup:after
 {
@@ -99,7 +99,7 @@
 	top: 130%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	font-size: 60;
+	font-size: 45;
 	transition: all 0.5s;
 }
 #signup:hover:after
@@ -148,13 +148,12 @@ input[class="login_input"]
 #allsignupform
 {
 	width: 500;
-	height: 650;
+	height: 610;
 	text-align: center;
 	background-color: rgba(185, 246, 202,0.5);
 	border-radius: 100;
 	margin: 0 auto;
 	margin-top: 100;
-	margin-bottom: 100;
 }
 #allsignupform img
 {
@@ -187,13 +186,12 @@ input[class="signup_input"]
 #allsearchform
 {
 	width: 1000;
-	height: 700;
+	height: 750;
 	text-align: center;
 	background-color: rgba(185, 246, 202,0.5);
 	border-radius: 100;
 	margin: 0 auto;
 	margin-top: 100;
-	margin-bottom: 100;
 }
 #allsearchform img
 {
@@ -204,7 +202,7 @@ input[class="signup_input"]
 }
 input[class="searchinput_01"]
 {
-	width: 700;
+	width: 600;
 	height: 50;
 	margin-bottom: 50;
 	padding-left: 20;
@@ -240,6 +238,22 @@ input[class="searchinput_03"]
 	font-family: 'arial';
 	background-color: #00c853;
 	border-bottom: 4 solid #1b5e20;
+}
+
+#backhome
+{
+	width: 50;
+	height: 50;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 75;
+}
+#backhome img
+{
+	width: 50;
+	height: 50;
+	margin-top: -60;
+	margin-bottom: 30;
 }
 
 #footer

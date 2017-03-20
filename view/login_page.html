@@ -21,19 +21,23 @@
 	<body>
 		<div id="allloginform">
 			<img src="image/user.png">
-			<form>
+			<form action="main.html" method="POST">
 				<div id="username">
-					<input type="text" placeholder="USERNAME" class="login_input">
+					<input type="text" placeholder="USERNAME" name="login_username" required="required" class="login_input">
 				</div>
 				<div id="password">
-					<input type="password" placeholder="PASSWORD" class="login_input">
+					<input type="password" placeholder="PASSWORD" name="login_password" required="required" class="login_input">
 				</div>
 				<div>
 					<input type="submit" name="submit" value="LOGIN" class="login_button">
 				</div>
 			</form>
 		</div>
-	
+		<a href="main.html">
+			<div id="backhome">
+				<img src="image/home.png">
+			</div>
+		</a>
 	</body>
 
 </html>

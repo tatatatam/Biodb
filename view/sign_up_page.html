@@ -19,26 +19,31 @@
 	<body>
 		<div id="allsignupform">
 			<img src="image/sign up.png">
-			<form>
+			<form action="main.html" method="POST">
 				<div id="signup_idcard">
-					<input type="text" placeholder="ID" class="signup_input">
+					<input type="text" placeholder="ID" name="signup_id" required="required" class="signup_input">
 				</div>
 				<div id="signup_name">
-					<input type="text" placeholder="NAME" class="signup_input">
+					<input type="text" placeholder="NAME" name="signup_name" required="required" class="signup_input">
 				</div>
 				<div id="signup_username">
-					<input type="text" placeholder="USERNAME" class="signup_input">
+					<input type="text" placeholder="USERNAME" name="signup_username" required="required" class="signup_input">
 				</div>
 				<div id="signup_password">
-					<input type="password" placeholder="PASSWORD" class="signup_input">
+					<input type="password" placeholder="PASSWORD" name="signup_password" required="required" class="signup_input">
 				</div>
 				<div id="signup_email">
-					<input type="text" placeholder="E-MAIL" class="signup_input">
+					<input type="text" placeholder="E-MAIL" name="signup_email" required="required" class="signup_input">
 				</div>
 				<div>
 					<input type="submit" name="submit" value="SUBMIT" class="signup_button">
 				</div>
 			</form>
 		</div>
+		<a href="main.html">
+			<div id="backhome">
+				<img src="image/home.png">
+			</div>
+		</a>
 	</body>
 </html>
